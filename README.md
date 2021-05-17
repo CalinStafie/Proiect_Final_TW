@@ -14,7 +14,6 @@
 - Stilurile CSS sa fie definite folosind clase direct pe elementele care trebuie stilizate (minim 80% din selectori) 
 - Layout-ul sa fie impartit in minim 2 coloane si sa fie realizat cu Flexbox si/sau CSS grid
 
-"style.css" linia 141
 ```css   
 header{
     display:grid;
