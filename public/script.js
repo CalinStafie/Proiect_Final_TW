@@ -5,8 +5,8 @@ document.getElementById("search-films-btn").addEventListener("click", goSearchfi
 localStorage.setItem("onSearch", "false");
 btn = document.getElementById("modify-list-btn");
 localStorage.setItem("loged","false");
-
-
+// Ar fi mers inlocuita functia setItem cu "localStorage["logged"] = "false";" direct
+// la orice comanda de asta in cod
 
 document.addEventListener('click',function(e)
 {
@@ -212,7 +212,7 @@ function goLogIn(){
             <label for="password">Password</label><br>
             <input class='input' type="password" id="password" name="password" placeholder="password"><br>
             <br>
-            <input  value="Log in" id='submit-log-in' class="submit-button">
+            <input  value="Log in" id='submit-log-in' class="submit-button" disabled>
             
             <h1 class = 'sing-up-header'>Don't have an account? Sign up!</h1>
             <label for="username2">Username</label><br>
@@ -227,7 +227,7 @@ function goLogIn(){
             <input class='input' type="password" id="password2"  name="password2" placeholder="password"><br>
             <br>
 
-            <input value="Sign up" id='submit-sign-up' class="submit-button">
+            <input value="Sign up" id='submit-sign-up' class="submit-button" disabled>
             <br>
         </form>
         <br>       
